@@ -12,7 +12,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-mongoose.connect("mongodb+srv://hari:hari@cluster0.beglv.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0");
+mongoose.connect("");
 
 app.post("/api/v1/signup", async (req, res) => {
     const requiredBody = z.object({
